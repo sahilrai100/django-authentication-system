@@ -1,0 +1,116 @@
+{% include "navbar.html" %}
+{% load static %}
+
+{% block content %}
+    
+<!-- 🌟 Hero Section -->
+
+<section class="hero" style="background: linear-gradient(135deg, #4b6cb7, #182848); color: white; padding: 5rem 2rem; text-align: center; border-radius: 12px; margin: 2% auto; max-width: 1200px;">
+    <div>
+        <!-- Logo (text-based for now, you can replace with an image later) -->
+        <h1 style="font-size: 60px; font-weight: 900; letter-spacing: 3px; font-family: 'Poppins', sans-serif;">
+            Zyanya
+        </h1>
+        <p style="font-size: 20px; margin-top: 10px; font-style: italic;">
+            Forever in Fashion ✨
+        </p>
+        <a href="{% url 'sarees' %}" class="btn btn-light btn-lg mt-4" style="border-radius: 30px; font-weight: 600; padding: 10px 25px;">
+            Shop Now
+        </a>
+        
+    </div>
+</section>
+
+<!-- 👕 Women / Men / Kids Section -->
+
+<div class="container mt-5">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="{% url 'women' %}" style="text-decoration:none; color:black">
+                    <div class="card card-body" style="height:100%; width:100%;">
+                        <img src="{% static 'images/women_section_1-removebg-preview.png' %}" alt="">
+                        <center><h5><b>Women's section</b></h5></center>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="{% url 'men' %}" style="text-decoration:none; color:black">
+                    <div class="card card-body" style="height:100%; width:100%;">
+                        <img src="{% static 'images/mens_section.png' %}" alt="">
+                        <center><h5><b>Men's section</b></h5></center>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="{% url 'kids_xander' %}" style="text-decoration:none; color:black">
+                    <div class="card card-body" style="height:100%; width:100%;">
+                        <img src="{% static 'images/kids_Section_1-removebg-preview.png' %}" alt="">
+                        <center><h5><b>Kid's section</b></h5></center>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<!-- 🔥 Trending Section -->
+
+<center>
+    <h1 style="margin:3%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px; font-style: italic; font-weight: 700;color:  #4b6cb7"  id="h">
+        Trending 🔥
+    </h1>
+</center>
+
+
+<div class="container"> 
+    
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="{% url 'sarees' %}" style="text-decoration:none; color:black">
+                    <div class="card card-body" style="height:100%; width:100%;">
+                        <img src="{% static 'images/sarees/bangali.webp' %}" alt="" style="height:23rem">
+                        <center><p style="margin:5%"><b>Bengali Saree</b></p></center>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="{% url 'men' %}" style="text-decoration:none; color:black">
+                    <div class="card card-body" style="height:100%; width:100%;">
+                        <img src="{% static 'images/men/shirts.webp' %}" alt="" style="height:23rem">
+                        <center><p style="margin:5%"><b>Casual Plain Shirt</b></p></center>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="{% url 'salwar' %}" style="text-decoration:none; color:black">
+                    <div class="card card-body" style="height:100%; width:100%;">
+                        <img src="{% static 'images/women_suit/plazzo.webp' %}" alt="" style="height:23rem">
+                        <center><p style="margin:5%"><b>Plazzo Suit</b></p></center>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="{% url 'kurti' %}" style="text-decoration:none; color:black">
+                    <div class="card card-body" style="height:100%; width:100%;">
+                        <img src="{% static 'images/kurtis/chikankari.webp' %}" alt="" style="height:23rem">
+                        <center><p style="margin:5%"><b>Chikankari Kurti</b></p></center>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+
+{% endblock %}
+{% include "fotter.html" %}
+    

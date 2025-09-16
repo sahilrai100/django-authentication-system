@@ -1,0 +1,55 @@
+{% include 'navbar.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-4">
+
+               <a href="#"style="text-decoration:none; color:black"> <div class="card card=body"style="margin:2%">
+                   
+                    <img src="{% static  'images/jeans/bootcut.webp' %}" alt="" style="height: 35rem;">
+                    <h2 style="margin-left:29%">The Bootcut </h2>
+                   <center> <h6><i class="bi bi-currency-rupee"></i><span>1099</span></h6></center>
+
+
+                </div>
+        </a>
+              
+            </div>
+
+            <div class="col-md-4">
+               <a href=""style="text-decoration:none; color:black"> <div class="card card=body" style="margin:2%">
+                   
+                    <img src="{% static  'images/jeans/boyfriend.webp' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:30%">The Boyfriend </h2>
+                   <center> <h6><i class="bi bi-currency-rupee"></i><span>1999</span></h6></center>
+
+
+                </div></a>
+        
+            </div>
+            <div class="col-md-4">
+              <a href=""style="text-decoration:none; color:black">  <div class="card card=body"style="margin:2%">
+                   
+                    <img src="{% static  'images/jeans/skinny.webp' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:30%">The Skinny </h2>
+                   <center> <h6><i class="bi bi-currency-rupee"></i><span>499</span></h6></center>
+
+
+                </div>
+        </a>
+              
+          
+        </div>
+    </div>
+</div>
+
+</div>
+{% endblock %}
+
+{% include "fotter.html" %}

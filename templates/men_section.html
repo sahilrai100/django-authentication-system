@@ -1,0 +1,79 @@
+{% include 'navbar.html' %}
+
+{% load static %}
+{% block content %}
+
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-4">
+               <a href="{% url 'tshirt' %}"style="text-decoration:none; color:black"> <div class="card card=body"style="margin:2%">
+                   
+                    <img src="{% static  'images/men/tshirt.webp' %}" alt="" style="height: 35rem;">
+                    <h2 style="margin-left:33%">T-shirt's</h2>
+
+                </div>
+        </a>
+              
+            </div>
+            <div class="col-md-4">
+               <a href="{% url 'shirt' %}"style="text-decoration:none; color:black"> <div class="card card=body" style="margin:2%">
+                   
+                    <img src="{% static  'images/men/shirts.webp' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:36%">Shirt's</h2>
+
+                </div></a>
+        
+            </div>
+            <div class="col-md-4">
+              <a href="{% url 'kurta' %}"style="text-decoration:none; color:black">  <div class="card card=body"style="margin:2%">
+                   
+                    <img src="{% static  'images/men/kurtas.webp' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:40%">Kurta's</h2>
+
+                </div>
+        </a>
+              
+            </div>
+            <div class="col-md-4">
+               <a href="{% url 'mens_jeans' %}"style="text-decoration:none; color:black">
+                 <div class="card card=body" style="margin:2%">
+                   
+                    <img src="{% static  'images/men/mens_jeans.webp' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:35%">Jean's</h2>
+
+                </div>
+        
+               </a>
+              
+            </div>
+            <div class="col-md-4">
+               <a href="{% url 'mens_suit' %}"style="text-decoration:none; color:black"> <div class="card card=body"style="margin:2%">
+                   
+                    <img src="{% static  'images/men/suits.webp' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:36%">Suit's</h2>
+
+                </div></a>
+        
+              
+            </div>
+
+
+          <div class="col-md-4">
+               <a href="{% url 'mens_inner' %}"style="text-decoration:none; color:black"> <div class="card card=body"style="margin:2%">
+                   
+                    <img src="{% static  'images/men/inner_wear.webp' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:35%">Inner Wear</h2>
+
+                </div>  </a>
+        
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% include "fotter.html" %}

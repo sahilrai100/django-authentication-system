@@ -1,0 +1,58 @@
+{% include 'navbar.html' %}
+
+{% load static %}
+{% block content %}
+
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-4">
+               <a href="#"style="text-decoration:none; color:black"> <div class="card card=body"style="margin:2%">
+                   
+                    <img src="{% static  'images/boy_kid/jeans.webp' %}" alt="" style="height: 35rem;">
+                    <h2 style="margin-left:37%">Jean's</h2>
+
+                </div>
+        </a>
+              
+            </div>
+            <div class="col-md-4">
+               <a href=""style="text-decoration:none; color:black"> <div class="card card=body" style="margin:2%">
+                   
+                    <img src="{% static  'images/boy_kid/kurtas.jpg' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:36%">Kurta's</h2>
+
+                </div></a>
+        
+            </div>
+            <div class="col-md-4">
+              <a href=""style="text-decoration:none; color:black">  <div class="card card=body"style="margin:2%">
+                   
+                    <img src="{% static  'images/boy_kid/shirts.webp' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:40%">Shirt's</h2>
+
+                </div>
+        </a>
+              
+            </div>
+            <div class="col-md-4">
+               <a href=""style="text-decoration:none; color:black">
+                 <div class="card card=body" style="margin:2%">
+                   
+                    <img src="{% static  'images/boy_kid/tshirt.jpg' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:35%">T-shirt's</h2>
+
+                </div>
+        
+               </a>
+            
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% include "fotter.html" %}

@@ -1,0 +1,164 @@
+{% include 'navbar.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+
+      <!-- Banarasi -->
+      <div class="col-md-4">
+        <a href="#" style="text-decoration:none; color:black"> 
+          <div class="card card-body" style="margin:2%; width:18rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="{% static 'images/sarees/banarsi.webp' %}" alt="The Banarsi" 
+                 style="width:100%; height:250px; object-fit:cover; border-radius:10px 10px 0 0;">
+            <h2 style="text-align:center; margin:15px 0; font-size:20px; font-weight:600;">The Banarasi</h2>
+            <div style="display:flex; justify-content:center; gap:8px; margin-bottom:10px;">
+              <h6 style="margin:0;"><i class="bi bi-currency-rupee"></i>799</h6>
+              <h6 style="margin:0;"><del style="color:darkgray">1999</del></h6>
+            </div>
+            <div style="display:flex; justify-content:center; gap:10px; margin:15px 0;">
+              <a href="{% url 'cart' %}">
+                <button class="btn btn-primary" style="transition:0.3s;"
+                        onmouseover="this.style.transform='scale(1.1)';"
+                        onmouseout="this.style.transform='scale(1)';">Add to Cart</button>
+              </a>
+              <button class="btn" style="border:1px solid black; background:white; transition:0.3s;"
+                      onmouseover="this.style.background='black'; this.style.color='white';"
+                      onmouseout="this.style.background='white'; this.style.color='black';">❤️ Wishlist</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Bengali -->
+      <div class="col-md-4">
+        <a href="#" style="text-decoration:none; color:black"> 
+          <div class="card card-body" style="margin:2%; width:18rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="{% static 'images/sarees/bangali.webp' %}" alt="The Bengali" 
+                 style="width:100%; height:250px; object-fit:cover; border-radius:10px 10px 0 0;">
+            <h2 style="text-align:center; margin:15px 0; font-size:20px; font-weight:600;">The Bengali</h2>
+            <div style="display:flex; justify-content:center; gap:8px; margin-bottom:10px;">
+              <h6 style="margin:0;"><i class="bi bi-currency-rupee"></i>1699</h6>
+              <h6 style="margin:0;"><del style="color:darkgray">6999</del></h6>
+            </div>
+            <div style="display:flex; justify-content:center; gap:10px; margin:15px 0;">
+              <a href="{% url 'cart' %}">
+                <button class="btn btn-primary" style="transition:0.3s;"
+                        onmouseover="this.style.transform='scale(1.1)';"
+                        onmouseout="this.style.transform='scale(1)';">Add to Cart</button>
+              </a>
+              <button class="btn" style="border:1px solid black; background:white; transition:0.3s;"
+                      onmouseover="this.style.background='black'; this.style.color='white';"
+                      onmouseout="this.style.background='white'; this.style.color='black';">❤️ Wishlist</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Chanderi -->
+      <div class="col-md-4">
+        <a href="#" style="text-decoration:none; color:black"> 
+          <div class="card card-body" style="margin:2%; width:18rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="{% static 'images/sarees/chanderi.jpg' %}" alt="The Chanderi" 
+                 style="width:100%; height:250px; object-fit:cover; border-radius:10px 10px 0 0;">
+            <h2 style="text-align:center; margin:15px 0; font-size:20px; font-weight:600;">The Chanderi</h2>
+            <div style="display:flex; justify-content:center; gap:8px; margin-bottom:10px;">
+              <h6 style="margin:0;"><i class="bi bi-currency-rupee"></i>2399</h6>
+              <h6 style="margin:0;"><del style="color:darkgray">4999</del></h6>
+            </div>
+            <div style="display:flex; justify-content:center; gap:10px; margin:15px 0;">
+              <a href="{% url 'cart' %}">
+                <button class="btn btn-primary" style="transition:0.3s;"
+                        onmouseover="this.style.transform='scale(1.1)';"
+                        onmouseout="this.style.transform='scale(1)';">Add to Cart</button>
+              </a>
+              <button class="btn" style="border:1px solid black; background:white; transition:0.3s;"
+                      onmouseover="this.style.background='black'; this.style.color='white';"
+                      onmouseout="this.style.background='white'; this.style.color='black';">❤️ Wishlist</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Kanjivaram -->
+      <div class="col-md-4">
+        <a href="#" style="text-decoration:none; color:black"> 
+          <div class="card card-body" style="margin:2%; width:18rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="{% static 'images/sarees/kanjivaram.jpg' %}" alt="The Kanjivaram" 
+                 style="width:100%; height:250px; object-fit:cover; border-radius:10px 10px 0 0;">
+            <h2 style="text-align:center; margin:15px 0; font-size:20px; font-weight:600;">The Kanjivaram</h2>
+            <div style="display:flex; justify-content:center; gap:8px; margin-bottom:10px;">
+              <h6 style="margin:0;"><i class="bi bi-currency-rupee"></i>1399</h6>
+              <h6 style="margin:0;"><del style="color:darkgray">2999</del></h6>
+            </div>
+            <div style="display:flex; justify-content:center; gap:10px; margin:15px 0;">
+              <a href="{% url 'cart' %}">
+                <button class="btn btn-primary" style="transition:0.3s;"
+                        onmouseover="this.style.transform='scale(1.1)';"
+                        onmouseout="this.style.transform='scale(1)';">Add to Cart</button>
+              </a>
+              <button class="btn" style="border:1px solid black; background:white; transition:0.3s;"
+                      onmouseover="this.style.background='black'; this.style.color='white';"
+                      onmouseout="this.style.background='white'; this.style.color='black';">❤️ Wishlist</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Kasavu -->
+      <div class="col-md-4">
+        <a href="#" style="text-decoration:none; color:black"> 
+          <div class="card card-body" style="margin:2%; width:18rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="{% static 'images/sarees/kasavu.webp' %}" alt="The Kasavu" 
+                 style="width:100%; height:250px; object-fit:cover; border-radius:10px 10px 0 0;">
+            <h2 style="text-align:center; margin:15px 0; font-size:20px; font-weight:600;">The Kasavu</h2>
+            <div style="display:flex; justify-content:center; gap:8px; margin-bottom:10px;">
+              <h6 style="margin:0;"><i class="bi bi-currency-rupee"></i>2400</h6>
+              <h6 style="margin:0;"><del style="color:darkgray">7999</del></h6>
+            </div>
+            <div style="display:flex; justify-content:center; gap:10px; margin:15px 0;">
+              <a href="{% url 'cart' %}">
+                <button class="btn btn-primary" style="transition:0.3s;"
+                        onmouseover="this.style.transform='scale(1.1)';"
+                        onmouseout="this.style.transform='scale(1)';">Add to Cart</button>
+              </a>
+              <button class="btn" style="border:1px solid black; background:white; transition:0.3s;"
+                      onmouseover="this.style.background='black'; this.style.color='white';"
+                      onmouseout="this.style.background='white'; this.style.color='black';">❤️ Wishlist</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Patola -->
+      <div class="col-md-4">
+        <a href="#" style="text-decoration:none; color:black"> 
+          <div class="card card-body" style="margin:2%; width:18rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="{% static 'images/sarees/patola.webp' %}" alt="The Patola" 
+                 style="width:100%; height:250px; object-fit:cover; border-radius:10px 10px 0 0;">
+            <h2 style="text-align:center; margin:15px 0; font-size:20px; font-weight:600;">The Patola</h2>
+            <div style="display:flex; justify-content:center; gap:8px; margin-bottom:10px;">
+              <h6 style="margin:0;"><i class="bi bi-currency-rupee"></i>1999</h6>
+              <h6 style="margin:0;"><del style="color:darkgray">5999</del></h6>
+            </div>
+            <div style="display:flex; justify-content:center; gap:10px; margin:15px 0;">
+              <a href="{% url 'cart' %}">
+                <button class="btn btn-primary" style="transition:0.3s;"
+                        onmouseover="this.style.transform='scale(1.1)';"
+                        onmouseout="this.style.transform='scale(1)';">Add to Cart</button>
+              </a>
+              <button class="btn" style="border:1px solid black; background:white; transition:0.3s;"
+                      onmouseover="this.style.background='black'; this.style.color='white';"
+                      onmouseout="this.style.background='white'; this.style.color='black';">❤️ Wishlist</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+{% include "fotter.html" %}

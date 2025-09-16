@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Example</title>
+  <!-- Linking CSS -->
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+  <style>
+   #f{
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+   }
+   footer ul li a,footer p{
+      color: white;
+   }
+   
+  </style>
+</head>
+<body>
+{% block content %}
+{% endblock  %}
+
+
+<center>
+    <h1 style="margin-top:4%; margin-bottom:4%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px; font-style: italic; font-weight: 700;color:  #4b6cb7"  id="h">
+        Why Zyanya ?
+    </h1>
+</center>
+
+
+<section class="features py-5" style="background:#fff; text-align:center;">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <!-- Made in India -->
+      <div class="col-md-2 col-6 mb-4">
+        <i class="bi bi-heart" style="font-size:2rem; color:black;" onmouseover="this.style.color='red';this.style.cursor='grab'" onmouseout="this.style.color='black'"></i>
+        <h6 class="mt-3" style="letter-spacing:2px; font-weight:600;">MADE IN INDIA</h6>
+        <p style="font-size:14px; color:#555;">Our products are truly Made in India</p>
+      </div>
+
+      <!-- Free Delivery -->
+      <div class="col-md-2 col-6 mb-4">
+        <i class="bi bi-truck" style="font-size:2rem; color:black;"onmouseover="this.style.color='red';this.style.cursor='grab'" onmouseout="this.style.color='black'"></i>
+        <h6 class="mt-3" style="letter-spacing:2px; font-weight:600;">FREE DELIVERY</h6>
+        <p style="font-size:14px; color:#555;">Enjoy free delivery on all orders</p>
+      </div>
+
+      <!-- Easy Returns -->
+      <div class="col-md-2 col-6 mb-4">
+        <i class="bi bi-gift" style="font-size:2rem; color:black;" onmouseover="this.style.color='red';this.style.cursor='grab'" onmouseout="this.style.color='black'"></i>
+        <h6 class="mt-3" style="letter-spacing:2px; font-weight:600;">EASY RETURNS</h6>
+        <p style="font-size:14px; color:#555;">Shop with confidence, enjoy easy returns</p>
+      </div>
+
+      <!-- Top-notch Support -->
+      <div class="col-md-2 col-6 mb-4">
+        <i class="bi bi-person-lines-fill" style="font-size:2rem; color:black;"onmouseover="this.style.color='red';this.style.cursor='grab'";this.style.cursor='grab' onmouseout="this.style.color='black'"></i>
+        <h6 class="mt-3" style="letter-spacing:2px; font-weight:600;">TOP-NOTCH SUPPORT</h6>
+        <p style="font-size:14px; color:#555;">Experience best support, ensuring your satisfaction</p>
+      </div>
+
+      <!-- Secure Payments -->
+      <div class="col-md-2 col-6 mb-4">
+        <i class="bi bi-shield-lock" style="font-size:2rem; color:black;"onmouseover="this.style.color='red';this.style.cursor='grab'" onmouseout="this.style.color='black'" ></i>
+        <h6 class="mt-3" style="letter-spacing:2px; font-weight:600;">SECURE PAYMENTS</h6>
+        <p style="font-size:14px; color:#555;">Shop securely with our trusted payment options</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer Section -->
+  
+   
+  <footer id="f">
+    
+    
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      
+    </ul>
+    <hr>
+    <p>© 2025 Company, Inc</p>
+  </footer>
+<script src="{% static "js/script.js " %}"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% include "navbar.html" %}
+
+
+
+{% block content %}
+
+<div class="container mt-5">
+  <h2>Your Cart</h2>
+  <table class="table table-bordered text-center">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in cart_items %}
+      <tr>
+        <td><img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" width="100"></td>
+        <td>{{ item.product.name }}</td>
+        <td>₹ {{ item.product.price }}</td>
+        <td>
+          <a href="{% url 'update_cart' item.id 'sub' %}" class="btn btn-sm btn-secondary">-</a>
+          {{ item.quantity }}
+          <a href="{% url 'update_cart' item.id 'add' %}" class="btn btn-sm btn-secondary">+</a>
+        </td>
+        <td>₹ {{ item.total_price }}</td>
+        <td>
+          <a href="{% url 'update_cart' item.id 'remove' %}" class="btn btn-sm btn-danger">Remove</a>
+        </td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="6">Your cart is empty.</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h4 class="text-end">Grand Total: ₹ {{ total_amount }}</h4>
+</div>
+
+
+{% endblock content %}
+
+
+{% include "fotter.html" %}

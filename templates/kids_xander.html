@@ -1,0 +1,40 @@
+{% include "navbar.html" %}
+{% load static %}   
+
+{% block content %}
+
+<center><h1 style="background-color:white;color:black">choose the catagory</h1> </center>
+<br>
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-6">
+               <a href="{% url 'boy' %}"style="text-decoration:none; color:black">
+                 <div class="card card-body">
+
+                    <img src="{% static 'images/kid/kid_boy.jpg' %}" alt=""style="height: 30rem;">
+
+                    <center><h1 style="background-color:black;color:cadetblue">Boy</h1></center>
+
+                </div>
+               </a>
+            </div>
+            <div class="col-md-6">
+                <a href="{% url 'girl' %}"style="text-decoration:none; color:black">
+                    <div class="card card-body">
+
+                    <img src="{% static 'images/kid/kid_girl.jpg' %}" alt="" style="height: 30rem;">
+                     <center><h1 style="background-color:black;color:cadetblue">Girl</h1></center>
+
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+
+
+{% include "fotter.html" %}

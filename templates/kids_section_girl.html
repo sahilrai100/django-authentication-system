@@ -1,0 +1,45 @@
+{% include 'navbar.html' %}
+
+{% load static %}
+{% block content %}
+
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-4">
+               <a href="#"style="text-decoration:none; color:black"> <div class="card card=body"style="margin:2%">
+                   
+                    <img src="{% static  'images/girl_kid/kurtis.webp' %}" alt="" style="height: 35rem;">
+                    <h2 style="margin-left:35%">Kurti's</h2>
+
+                </div>
+        </a>
+              
+            </div>
+            <div class="col-md-4">
+               <a href=""style="text-decoration:none; color:black"> <div class="card card=body" style="margin:2%">
+                   
+                    <img src="{% static  'images/girl_kid/hoddies.jpg' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:36%">Hoddie's</h2>
+
+                </div></a>
+        
+            </div>
+            <div class="col-md-4">
+              <a href=""style="text-decoration:none; color:black">  <div class="card card=body"style="margin:2%">
+                   
+                    <img src="{% static  'images/girl_kid/skirts.jpg' %}" alt=""style="height: 35rem;">
+                    <h2 style="margin-left:40%">Skiirt's</h2>
+
+                </div>
+        </a>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% include "fotter.html" %}
